@@ -3,6 +3,13 @@
 
 
 $(document).ready(function () {
+  var abs1 = $('.absbox.abs1');
+    var abs2 = $('.absbox.abs2');
+    var abs1Height = abs1.outerHeight();
+    var abs2Height = abs2.outerHeight();
+    var maxHeight = Math.max(abs1Height, abs2Height);
+    abs1.height(maxHeight);
+    abs2.height(maxHeight);
     $('.qhead').on('click', function() {
         if($(this).hasClass('active')) {
           $(this).siblings('.ans-box').slideUp();

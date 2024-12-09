@@ -242,7 +242,7 @@ h1 span {
 .whysp h2 {
   color: #fff;
   font-size: 50px;
-  line-height: 54px;
+  line-height: 65px;
   font-weight: 700;
   display: flex;
   margin: 0;
@@ -290,6 +290,7 @@ h1 span {
   color: #000;
   font-size: 14px;
   flex: 1;
+  flex-basis: 50%;
 }
 .whyspbox p {
   color: #393939;
@@ -975,6 +976,11 @@ button[type="submit"]:hover {
   opacity: 0.5;
   pointer-events: none;
 }
+@media (min-width: 786px) {
+.hidedesk{
+  display: none;
+}
+}
 @media (max-width: 1000px) {
   .footer {
     padding: 20px;
@@ -994,10 +1000,17 @@ button[type="submit"]:hover {
   }
 }
 @media (max-width: 786px) {
+  .logo svg{
+    max-width: 160px;
+}
   h1 {
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 46px;
+    line-height: 52px;
     max-width: 426px;
+  }
+  .whysp h2 {
+    font-size: 40px;
+    line-height: 55px;
   }
   h1 span.bgorange {
     display: block;
@@ -1007,13 +1020,26 @@ button[type="submit"]:hover {
   }
   .whysp-i {
     flex-direction: column;
-    padding: 41px 30px 60px;
+    padding: 30px 20px;
   }
   .whysp {
     max-width: 512px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
+  .whysp-i-right,.whysp-i-right-i {
+    gap: 17px;
+}
+.whysphead {
+  align-items: start;
+}
+.whysphead>svg {
+  min-width: 13px;
+}
+.whyspbox{
+  padding: 11px;
+}
+
   .wwp h2 {
     font-size: 55px;
     line-height: 56px;
@@ -1033,6 +1059,7 @@ button[type="submit"]:hover {
   }
   .wpbox {
     height: 100%;
+    padding: 12px 10px;
   }
   .priceboxes {
     flex-direction: column;
@@ -1055,13 +1082,13 @@ button[type="submit"]:hover {
     left: 50%;
     transform: translateX(-50%);
     bottom: -209px;
-    max-width: 93%;
+    max-width: 300px;
   }
   .absbox.abs3 {
     left: 50%;
     transform: translateX(-50%);
     bottom: -83px;
-    max-width: 93%;
+    max-width: 300px;
   }
   .su-boxes {
     margin-bottom: 221px;
@@ -1172,8 +1199,12 @@ button[type="submit"]:hover {
     font-weight: 500;
   }
   .sb {
-    min-width: 452px;
-    height: 574px;
+    min-width: 386px;
+    height: 500px;
+  }
+  .sb h3 {
+    padding-top: 42px;
+    padding-left: 42px;
   }
   .sb1,
   .sb3 {
@@ -1185,6 +1216,7 @@ button[type="submit"]:hover {
   .sb ul {
     position: relative;
     z-index: 3;
+    padding-left: 60px;
   }
   img.sbimg {
     max-width: 100%;
@@ -1197,11 +1229,8 @@ button[type="submit"]:hover {
   }
   img.sbv {
     max-width: 100%;
-    height: 290px;
-    right: 49%;
+    height: 250px;
     bottom: -2px;
-    transform: translateX(50%);
-    object-position: center;
     z-index: 1;
   }
 
@@ -1220,8 +1249,8 @@ button[type="submit"]:hover {
     padding-bottom: 30px;
   }
   .centerbox {
-    max-width: 357px;
-    max-height: 378px;
+    max-width: 327px;
+    max-height: 358px;
   }
   .footer-inn {
     flex-direction: column;
@@ -1238,6 +1267,9 @@ button[type="submit"]:hover {
   .header {
     margin: 0;
     padding: 10px 6px;
+  }
+  .hidemob{
+    display: none;
   }
 }
 
