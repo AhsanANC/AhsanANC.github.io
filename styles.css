@@ -1112,7 +1112,7 @@ button[type="submit"]:hover {
   }
   .brands-i {
     overflow: hidden;
-    height: 780px;
+    height: 620px;
   }
   .brands-i h2 {
     font-size: 55px;
@@ -1163,7 +1163,7 @@ button[type="submit"]:hover {
 
   .talk.page-w {
     flex-direction: column;
-    padding: 60px 30px;
+    padding: 50px 15px;
   }
   .t-left {
     max-width: 100%;
@@ -1285,19 +1285,21 @@ button[type="submit"]:hover {
   }
 
   .b4 {
-    width: 98px;
-    right: 4px;
+    width: 88px;
+        right: 4px;
+        top: 350px;
   }
   .b5 {
-    top: 554px;
+    top: 467px;
     left: auto;
     width: 99px;
     right: 56px;
   }
 
   .b6 {
-    left: 25px;
-    width: 110px;
+    left: 89px;
+        width: 97px;
+        top: 477px;
   }
   .b7 {
     top: 373.49px;
