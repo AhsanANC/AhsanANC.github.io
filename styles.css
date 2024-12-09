@@ -1271,6 +1271,12 @@ button[type="submit"]:hover {
   .hidemob{
     display: none;
   }
+  .fot-left a{
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 /* anc small client mobile queries */
