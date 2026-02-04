@@ -826,6 +826,564 @@ transform: scale(1);
 
 
 
+<!-- acordion sec2 -->
+
+<style>:root{
+  --anc-page-width:1280px;
+}
+
+#anc_BGDX4y .anc-section{
+  padding-top:3rem;
+  padding-bottom:3rem;
+}
+#anc_BGDX4y .anc-container {
+  max-width: var(--anc-page-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  z-index:2;
+}
+#anc_BGDX4y .full-width{
+  max-width:100%;
+  width:100%;
+}
+#anc_BGDX4y .container{
+  background:var(--container-bg-color);
+  border-radius:2rem;
+  padding-top:1.5rem;
+  padding-bottom:1.5rem;
+}
+#MainContent {
+    width: 100%;
+}
+#anc_BGDX4y .tcolor{
+  color:var(--tcolor);
+}
+
+#anc_BGDX4y .fs { font-size: var(--fs); }
+#anc_BGDX4y .fw { font-weight: var(--fw); }
+
+#anc_BGDX4y .hpx { height: var(--h); }
+
+#anc_BGDX4y .dw { width: var(--dw); }
+
+#anc_BGDX4y .mb { margin-bottom: var(--mb); }
+
+#anc_BGDX4y .br  { border-radius: var(--br); }
+
+#anc_BGDX4y .pt { padding-top: var(--pt); }
+#anc_BGDX4y .pb { padding-bottom: var(--pb); }
+
+#anc_BGDX4y .overflow-h{
+  overflow:hidden;
+}
+#anc_BGDX4y .visually-hidden{
+  display:none;
+}
+
+#anc_BGDX4y .fcc{
+  display:flex;
+  align-items:center;   
+  justify-content:center; 
+}
+
+#anc_BGDX4y .jc-left{
+ justify-content:start; 
+}
+#anc_BGDX4y .jc-center{
+ justify-content:center; 
+}
+#anc_BGDX4y .jc-right{
+ justify-content:end; 
+}
+
+#anc_BGDX4y .ta-left{
+  text-align:left;
+}
+#anc_BGDX4y .ta-center{
+  text-align:center;
+}
+#anc_BGDX4y .ta-right{
+  text-align:right;
+}
+
+#anc_BGDX4y .bgcolor{
+  background-color:var(--bgcolor);
+}
+#anc_BGDX4y .bgimg{
+ background-image:var(--bgimg);
+}
+#anc_BGDX4y .bgcover{
+  background-size: cover;
+}
+
+#anc_BGDX4y .text-color{
+ color:var(--tc); 
+}
+#anc_BGDX4y .bg-color{
+ background-color:var(--bgc); 
+}
+
+#anc_BGDX4y a{
+  text-decoration:none;
+}
+
+#anc_BGDX4y .lh{
+  line-height:var(--lh);
+}
+#anc_BGDX4y .ls{
+  letter-spacing:var(--ls);
+}
+#anc_BGDX4y .f-r-rev{
+  flex-direction:row-reverse;
+}
+#anc_BGDX4y .p-rel{
+  position: relative;
+}
+@media only screen and (max-width: 768px){
+    #anc_BGDX4y .anc-section{
+        padding-top:3rem;
+        padding-bottom:3rem;
+    }
+    #anc_BGDX4y .anc-container{
+        padding:0 1rem;
+        max-width:100%;
+    }
+    #anc_BGDX4y .container{
+        border-radius:1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
+    #anc_BGDX4y .mfs { font-size: var(--mfs); }
+    #anc_BGDX4y .mhpx { height: var(--mh); }
+    #anc_BGDX4y .mw   { width: var(--mw); } 
+      
+    #anc_BGDX4y .mbr  { border-radius: var(--mbr); }
+    
+    #anc_BGDX4y .mptb{
+      padding-top: var(--mptb);
+      padding-bottom: var(--mptb);
+    }
+}
+
+@media (max-width: 767px) {
+    #anc_BGDX4y .hidemob {
+        display: none !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    #anc_BGDX4y .hidetab {
+        display: none !important;
+    }
+}
+@media (min-width: 768px) {
+    #anc_BGDX4y .hidetab-above {
+        display: none !important;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+    #anc_BGDX4y .hidesdesk {
+        display: none !important;
+    }
+}
+@media (min-width: 1500px) {
+    #anc_BGDX4y .hideldesk {
+        display: none !important;
+    }
+}
+
+#anc_BGDX4y .anc-rich-text .rich-text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#anc_BGDX4y .rich-text-link {
+  position: relative;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: max-content;
+  color:currentColor;
+}
+#anc_BGDX4y .rich-text-link .link-text {
+  position: relative;
+}
+#anc_BGDX4y .rich-text-link .link-text::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+#anc_BGDX4y .rich-text-link:hover .link-text::after {
+  width: 0;
+}
+
+#anc_BGDX4y .rich-text-link .link-arrow {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+#anc_BGDX4y .rich-text-link:hover .link-arrow {
+  transform: translateX(5px);
+}
+.gap { gap: var(--gap); }
+@media screen and (max-width: 768px) { #anc_BGDX4y .mbr { border-radius: var(--mbr); } }
+
+  #anc_BGDX4y .section-template--18283290263636__accordion_BGDX4y {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+#anc_BGDX4y .anc-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; 
+  }
+
+  /* Accordion Specific Styles */
+  #anc_BGDX4y .c-pointer{
+   cursor:pointer; 
+  }
+  #anc_BGDX4y .jc-sp{
+    justify-content:space-between;
+  }
+  #anc_BGDX4y .p{
+    padding: var(--p);
+  }
+  #anc_BGDX4y .bw-0{
+    border-width: 0;
+  }
+  #anc_BGDX4y .bbw{
+    border-bottom-width: var(--bbw);
+  }
+  #anc_BGDX4y .bor-color{
+    border-color: var(--bc);
+  }
+  #anc_BGDX4y .border-solid{
+    border-style: solid;
+  }
+  
+  #anc_BGDX4y .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+  }
+
+  #anc_BGDX4y .collapsible-content .inner {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  #anc_BGDX4y .collapsible-row.open .collapsible-content .inner {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  #anc_BGDX4y .aac {
+      cursor: pointer;
+      position: relative;
+      width: 14px;
+      height: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  #anc_BGDX4y .a-arr{
+    transition:all .35s cubic-bezier(.4,0,.2,1);
+    background-color:var(--aac);
+    border-bottom-width: 8px;
+    border-color:var(--aac);
+    border-radius: 4px;
+    width: 2px;
+    height: 9px;
+    display: inline-block;
+    transform-origin: center;
+  }
+  #anc_BGDX4y .a-arr-l{
+    transform:matrix(-0.707107, 0.707107, -0.707107, -0.707107, -3, 0);
+  }
+  #anc_BGDX4y .a-arr-r{
+    transform:matrix(-0.707107, -0.707107, 0.707107, -0.707107, 0, 0);
+  }
+  #anc_BGDX4y .open .a-arr-l{
+    transform: matrix(0.707107, 0.707107, -0.707107, 0.707107, -3, 0);
+  }
+  #anc_BGDX4y .open .a-arr-r{
+    transform: matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0);
+  }#anc_BGDX4y .block-item_XNbNXK {
+      --mb: 1rem;--bbw:0px; 
+        --bc:rgba(0,0,0,0); 
+        --br:rgba(0,0,0,0);
+        --aac:#000000;
+        
+        
+            --p:0.6rem;
+            --br:5px;
+            --bgc: #ffffff;
+            --tc: #000000;
+        
+}#anc_BGDX4y .block-item_qDQGw3 {
+      --mb: 1rem;--bbw:0px; 
+        --bc:rgba(0,0,0,0); 
+        --br:rgba(0,0,0,0);
+        --aac:#000000;
+        
+        
+            --p:0.6rem;
+            --br:5px;
+            --bgc: #ffffff;
+            --tc: #000000;
+        
+}#anc_BGDX4y .block-item_3TUptw {
+      --mb: 1rem;--bbw:0px; 
+        --bc:rgba(0,0,0,0); 
+        --br:rgba(0,0,0,0);
+        --aac:#000000;
+        
+        
+            --p:0.6rem;
+            --br:5px;
+            --bgc: #ffffff;
+            --tc: #000000;
+        
+}#anc_BGDX4y .block-item_prMtNd {
+      --mb: 1rem;--bbw:0px; 
+        --bc:rgba(0,0,0,0); 
+        --br:rgba(0,0,0,0);
+        --aac:#000000;
+        
+        
+            --p:0.6rem;
+            --br:5px;
+            --bgc: #ffffff;
+            --tc: #000000;
+        
+}#anc_BGDX4y .block-item_4ctfrC {
+      --mb: 1rem;--bbw:0px; 
+        --bc:rgba(0,0,0,0); 
+        --br:rgba(0,0,0,0);
+        --aac:#000000;
+        
+        
+            --p:0.6rem;
+            --br:5px;
+            --bgc: #ffffff;
+            --tc: #000000;
+        
+}#anc_BGDX4y .block-item_xzPqRK {
+      --mb: 1rem;--bbw:0px; 
+        --bc:rgba(0,0,0,0); 
+        --br:rgba(0,0,0,0);
+        --aac:#000000;
+        
+        
+            --p:0.6rem;
+            --br:5px;
+            --bgc: #ffffff;
+            --tc: #000000;
+        
+}#anc_BGDX4y .block-item_aUBQ3T {
+      --mb: 1rem;--bbw:0px; 
+        --bc:rgba(0,0,0,0); 
+        --br:rgba(0,0,0,0);
+        --aac:#000000;
+        
+        
+            --p:0.6rem;
+            --br:5px;
+            --bgc: #ffffff;
+            --tc: #000000;
+        
+}</style><div id="anc_BGDX4y">
+    <div class="anc-accordion p-rel anc-sectionsection-template--18283290263636__accordion_BGDX4y mt mb pt pb mptb" style="--pt:3rem;--pb:3rem;--mptb:1rem;--anc-page-width:calc(70% - 2rem );">
+    <div class="anc-overlay bgcolor" style=" --bgcolor: #000000;opacity: 0;"></div>
+  <div class="accordion-wrapper p-rel  anc-container container br mbr" style="--container-bg-color:#f1f1f1;--br: 10px;--mbr: 5px;">
+      
+         <div class="section-header ta-center"><p class="anc-subheading tcolor mb" style="--tcolor: #000000; --mb: 0.5rem;">Explore</p><h2 class="anc-heading tcolor mb" style="--tcolor: #000000; --mb: 1rem;">Frequently asked questions</h2><p class="anc-subtext tcolor mb" style="--tcolor: #000000; --mb: 1.5rem;">Answer common questions here.</p></div>
+
+      <div class="accordion-items">
+                <div class="collapsible-row block-item_XNbNXK br bw-0 mb bbw bor-color border-solid bg-color">
+                  <div class="ac-header p fcc jc-sp text-color">
+                    <h5 class="fs mfs fw c-pointer">What payment methods do you accept?</h5>
+
+                    <div class="aac">
+                      <div class="a-arr a-arr-l"></div>
+                      <div class="a-arr a-arr-r"></div>
+                    </div>
+                  </div>
+                  <div class="collapsible-content">
+                    <div class="inner p" style="">
+                      <div class="fs mfs">
+                      <p>We accept all major credit cards, PayPal, and other secure payment methods.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+
+                <div class="collapsible-row block-item_qDQGw3 br bw-0 mb bbw bor-color border-solid bg-color">
+                  <div class="ac-header p fcc jc-sp text-color">
+                    <h5 class="fs mfs fw c-pointer">Can I change or cancel my order?</h5>
+
+                    <div class="aac">
+                      <div class="a-arr a-arr-l"></div>
+                      <div class="a-arr a-arr-r"></div>
+                    </div>
+                  </div>
+                  <div class="collapsible-content">
+                    <div class="inner p" style="">
+                      <div class="fs mfs">
+                      <p>Orders can usually be modified or canceled within a short window after purchase. If you need to make a change, please contact our support team as soon as possible with your order number and details. We will do our best to accommodate your request, but once an order has been processed or shipped, changes may not be possible.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+
+                <div class="collapsible-row block-item_3TUptw br bw-0 mb bbw bor-color border-solid bg-color">
+                  <div class="ac-header p fcc jc-sp text-color">
+                    <h5 class="fs mfs fw c-pointer">How can I track my order?</h5>
+
+                    <div class="aac">
+                      <div class="a-arr a-arr-l"></div>
+                      <div class="a-arr a-arr-r"></div>
+                    </div>
+                  </div>
+                  <div class="collapsible-content">
+                    <div class="inner p" style="">
+                      <div class="fs mfs">
+                      <p>Once your order ships, you’ll receive a tracking number via email to monitor your shipment.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+
+                <div class="collapsible-row block-item_prMtNd br bw-0 mb bbw bor-color border-solid bg-color">
+                  <div class="ac-header p fcc jc-sp text-color">
+                    <h5 class="fs mfs fw c-pointer">What is your return policy?</h5>
+
+                    <div class="aac">
+                      <div class="a-arr a-arr-l"></div>
+                      <div class="a-arr a-arr-r"></div>
+                    </div>
+                  </div>
+                  <div class="collapsible-content">
+                    <div class="inner p" style="">
+                      <div class="fs mfs">
+                      <p>We offer hassle-free returns within 30 days. Items must be in their original condition and packaging.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+
+                <div class="collapsible-row block-item_4ctfrC br bw-0 mb bbw bor-color border-solid bg-color">
+                  <div class="ac-header p fcc jc-sp text-color">
+                    <h5 class="fs mfs fw c-pointer">How long does shipping usually take?</h5>
+
+                    <div class="aac">
+                      <div class="a-arr a-arr-l"></div>
+                      <div class="a-arr a-arr-r"></div>
+                    </div>
+                  </div>
+                  <div class="collapsible-content">
+                    <div class="inner p" style="">
+                      <div class="fs mfs">
+                      <p>Standard shipping typically takes 5–7 business days. Expedited options may be available at checkout.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+
+                <div class="collapsible-row block-item_xzPqRK br bw-0 mb bbw bor-color border-solid bg-color">
+                  <div class="ac-header p fcc jc-sp text-color">
+                    <h5 class="fs mfs fw c-pointer">Do you offer gift cards?</h5>
+
+                    <div class="aac">
+                      <div class="a-arr a-arr-l"></div>
+                      <div class="a-arr a-arr-r"></div>
+                    </div>
+                  </div>
+                  <div class="collapsible-content">
+                    <div class="inner p" style="">
+                      <div class="fs mfs">
+                      <p>Yes! We offer digital gift cards that can be purchased directly from our store. You can choose the amount, and the gift card will be sent via email to the recipient instantly. Gift cards are a convenient way to give someone the flexibility to pick the items they love, and they never expire within the valid period.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+
+                <div class="collapsible-row block-item_aUBQ3T br bw-0 mb bbw bor-color border-solid bg-color">
+                  <div class="ac-header p fcc jc-sp text-color">
+                    <h5 class="fs mfs fw c-pointer">Do you ship internationally?</h5>
+
+                    <div class="aac">
+                      <div class="a-arr a-arr-l"></div>
+                      <div class="a-arr a-arr-r"></div>
+                    </div>
+                  </div>
+                  <div class="collapsible-content">
+                    <div class="inner p" style="">
+                      <div class="fs mfs">
+                      <p>Yes, we ship to most countries worldwide. Shipping fees, delivery times, and customs charges may vary depending on your location. International shipments may take longer to arrive than domestic orders, so please allow extra time for processing and delivery. You can track your order once it has been shipped using the tracking number provided in your confirmation email.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+</div>
+
+  </div>
+</div>
+</div>
+
+<script>
+    (function(){
+        const initAccordion = () => {
+            const accordionRows = document.querySelectorAll('#anc_BGDX4y .collapsible-row');
+
+            accordionRows.forEach(row => {
+                const header = row.querySelector('.ac-header');
+                const newHeader = header.cloneNode(true);
+                header.parentNode.replaceChild(newHeader, header);
+
+                newHeader.addEventListener('click', function() {
+                    const isOpen = row.classList.contains('open');
+                    if (isOpen) {
+                        row.classList.remove('open');
+                         row.querySelector('.collapsible-content').style.maxHeight = null;
+                    } else {
+                        row.classList.add('open');
+                        const content = row.querySelector('.collapsible-content');
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            });
+        };
+        
+        initAccordion();
+        
+        document.addEventListener("shopify:section:load", function(event) {
+            if (event.detail.sectionId === "template--18283290263636__accordion_BGDX4y") {
+                 initAccordion();
+            }
+        });
+    })();
+</script>
+
+
 
    <script src="scripts.js"></script>
 
