@@ -115,7 +115,7 @@
         padding-bottom:3rem;
     }
     #anc_x9s8d7 .anc-container{
-        padding:0 1rem;
+        padding:0 0.5rem;
         max-width:100%;
     }
     #anc_x9s8d7 .container{
@@ -503,7 +503,7 @@
         padding-bottom:3rem;
     }
     #anc_BGDX4y .anc-container{
-        padding:0 1rem;
+        padding:0 0.5rem;
         max-width:100%;
     }
     #anc_BGDX4y .container{
@@ -834,7 +834,7 @@
 
 @media only screen and (max-width: 768px){
     #anc_gxDfUL .anc-section{ padding-top:3rem; padding-bottom:3rem; }
-    #anc_gxDfUL .anc-container{ padding:0 1rem; max-width:100%; }
+    #anc_gxDfUL .anc-container{ padding:0 0.5rem; max-width:100%; }
     #anc_gxDfUL .container{
         border-radius:1rem;
         margin-left: 0.5rem;
